@@ -2,6 +2,10 @@
 
 This repository contains an Airflow DAG (Directed Acyclic Graph) for a model pipeline. The pipeline includes tasks for data extraction, transformation, training, prediction, and evaluation of Industry orders.
 
+You can find the original development script in [modelo.ipynb](https://github.com/viniciusfjacinto/machine-learning-fiec/blob/main/modelo.ipynb) and the Airflow DAG in [ml_dag.py](https://github.com/viniciusfjacinto/machine-learning-fiec/blob/main/dags/ml_dag.py)
+
+The file [dados.csv](https://github.com/viniciusfjacinto/machine-learning-fiec/blob/main/dados.csv) contains the data used in this project.
+
 ## Table of Contents
 
 - [Introduction](#introduction)

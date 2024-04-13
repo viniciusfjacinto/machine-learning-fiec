@@ -26,18 +26,12 @@ The purpose of this pipeline is to automate the process of analyzing, exploring,
 ## Tasks
 
 ### Extract Data
-
-- **Task ID**: extract_data
-- **Python Function**: extraction
 - **Process**:
   - Connects to an AWS Athena database using provided credentials.
   - Executes an SQL query to retrieve the dataset (`raw.fiec_industry_data`).
   - Returns the extracted data for further processing.
 
 ### Transform Data
-
-- **Task ID**: transform_data
-- **Python Function**: transformation
 - **Process**:
   - Preprocesses the extracted data:
     - Converts column names to title case.
@@ -49,9 +43,6 @@ The purpose of this pipeline is to automate the process of analyzing, exploring,
   - Returns the preprocessed data.
 
 ### Train Model
-
-- **Task ID**: train_model
-- **Python Function**: training
 - **Process**:
   - Receives the preprocessed data from the previous task.
   - Divides the data into features (X) and target (y).
@@ -62,9 +53,6 @@ The purpose of this pipeline is to automate the process of analyzing, exploring,
   - Returns the filtered training features, testing features, and target variables.
 
 ### Predict
-
-- **Task ID**: predict
-- **Python Function**: prediction
 - **Process**:
   - Receives the filtered training and testing features along with target variables.
   - Utilizes the trained SVR model to predict the target variable on the testing dataset.
@@ -72,9 +60,6 @@ The purpose of this pipeline is to automate the process of analyzing, exploring,
   - Returns the predicted values and actual values in DataFrame format.
 
 ### Evaluate Model
-
-- **Task ID**: evaluate_model
-- **Python Function**: evaluation
 - **Process**:
   - Receives the predicted and actual values from the previous task.
   - Calculates the percentage difference between the predicted and actual values.

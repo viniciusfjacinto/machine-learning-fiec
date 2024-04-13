@@ -67,9 +67,3 @@ The purpose of this pipeline is to automate the process of analyzing, exploring,
   - Calculates the percentage of satisfactory predictions.
   - Returns the percentage of satisfactory predictions.
 
-## Usage
-
-1. Clone this repository:
-
-   ```bash
-   git clone <repository-url>

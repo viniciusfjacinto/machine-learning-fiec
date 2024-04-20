@@ -1,6 +1,6 @@
 # Model Pipeline
 
-This repository contains an Airflow DAG (Directed Acyclic Graph) for a model pipeline. The pipeline includes tasks for data extraction, transformation, training, prediction, and evaluation of Industry orders.
+This repository contains an Airflow DAG (Directed Acyclic Graph) for a profit prediction model pipeline. The pipeline includes tasks for data extraction, transformation, training, prediction, and evaluation of Industry orders.
 
 You can find the original development script and additional comments about the model choosen and data exploration in [modelo.ipynb](https://github.com/viniciusfjacinto/machine-learning-fiec/blob/main/modelo.ipynb)
 
